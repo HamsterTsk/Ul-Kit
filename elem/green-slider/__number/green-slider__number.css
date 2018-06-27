@@ -1,0 +1,24 @@
+.green-slider__number {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: rgb(209,209,209);
+    font-family: 'sans-serif';
+    position: absolute;
+    top: 15px;
+}
+#green-slider__number_1 {
+    left: 3px;
+    color: #4db7a7;
+}
+#green-slider__number_2 {
+    left: 62px;
+}
+#green-slider__number_3 {
+    left: 126px;
+}
+#green-slider__number_4 {
+    left: 191px;
+}
+#green-slider__number_5 {
+    left: 246px;
+}

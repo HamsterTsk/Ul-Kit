@@ -1,0 +1,19 @@
+.green-slider__bar_active {
+    z-index: 3;
+    display: block;
+    position: relative;
+    top: -20px;
+    width: 0;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #4db7a7;
+}
+.green-slider__bar_disactive {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    width: 260px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #e5e5e5;
+}
