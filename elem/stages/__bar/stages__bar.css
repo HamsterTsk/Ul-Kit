@@ -1,0 +1,17 @@
+.stages__bar_disactive {
+    display: block;
+    position: absolute;
+    width: 590px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #e5e5e5;
+}
+.stages__bar_active {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #e75735;
+    transition: all ease 500ms;
+}

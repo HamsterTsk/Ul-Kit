@@ -1,0 +1,35 @@
+.stages__circle {
+    position: absolute;
+    top: -12px;
+    display: block;
+    width: 29px;
+    height: 29px;
+    border-radius: 14px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: rgb(255,255,255);
+    font-family: "sans-serif";
+    text-align: center;
+    cursor: pointer;
+    transition: all ease 1000ms;
+}
+.stages__circle_active {
+    background-color: #e75735;
+}
+.stages__circle_disactive {
+    background-color: #e5e5e5;
+    color: rgb(136,136,136);
+}
+#stages__circle_2 {
+    left: 148px;
+}
+#stages__circle_3 {
+    left: 296px;
+}
+#stages__circle_4 {
+    left: 444px;
+}
+#stages__circle_5 {
+    left: 590px;
+}
