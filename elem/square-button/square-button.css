@@ -1,0 +1,10 @@
+.square-button {
+    position: relative;
+    width: 118px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #4db7a8;
+    box-shadow: 0 2px 0 0 #28a290;
+    cursor: pointer;
+}
+

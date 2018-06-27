@@ -1,0 +1,8 @@
+.square-button__circle {
+    display: none;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.4);
+}
