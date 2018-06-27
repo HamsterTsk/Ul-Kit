@@ -1,0 +1,14 @@
+.toggle__text {
+    font-size: 12px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 5px;
+    color: rgb(255,255,255);
+    transition: all ease 1000ms;
+}
+.toggle__text_active {
+    left: 13px;
+}
+.toggle__text_disactive {
+    left: 27px;
+}

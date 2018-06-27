@@ -1,0 +1,16 @@
+.toggle__circle {
+    position: absolute;
+    top: 3px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(255,255,255);
+    transition: all ease 700ms;
+}
+.toggle__circle_active {
+    left: 37px;
+}
+.toggle__circle_disactive {
+    left: 4px;
+}
