@@ -1,0 +1,7 @@
+.red-slider {
+    display: block;
+    width: 268px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
