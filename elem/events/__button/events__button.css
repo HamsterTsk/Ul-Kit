@@ -1,0 +1,21 @@
+.events__button {
+    width: 128px;
+    height: 22px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 3px 0 0 #369284;
+    cursor: pointer;
+}
+.events__button_text {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: rgb(67,172,157);
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: "sans-serif";
+    font-weight: 600;
+}
