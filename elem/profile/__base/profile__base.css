@@ -1,0 +1,28 @@
+.profile__base {
+    position: absolute;
+    z-index: 100;
+    left: 100px;
+    width: 169px;
+    height: 93px;
+    background-color: #e5e5e5;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity ease 500ms;
+}
+.profile__base_man {
+    background-color: #e5e5e5;
+}
+.profile__base_female {
+    background-color: #4db7a7;
+}
+.profile__base_decore {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 45px;
+    left: -6px;
+    width: 20px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+}
