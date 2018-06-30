@@ -1,0 +1,16 @@
+.percentages__svg {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -20px;
+}
+.percentages__scale {
+    cx: 55px;
+    cy: 55px;
+    stroke-dashoffset: 0;
+    transition: stroke-dashofset 1s linear;
+    stroke: white;
+    stroke-width: 5px;
+}
+.percentages__scale_active {
+    stroke: #e75735;
+}
