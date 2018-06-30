@@ -1,0 +1,13 @@
+.message__icon {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+.message__icon_chat {
+    top: 115px;
+    left: 35px;
+}
+.message__icon_camera {
+    top: 115px;
+    left: 220px;
+}
