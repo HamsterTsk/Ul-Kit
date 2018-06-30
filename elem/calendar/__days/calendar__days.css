@@ -1,0 +1,13 @@
+.calendar__days {
+    font-size: 20px;
+    color: #868686;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    display: inline-block;
+    line-height: 39px;
+    margin-left: -3px;
+    margin-top: 1px;
+}
