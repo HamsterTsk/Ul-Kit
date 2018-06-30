@@ -91,13 +91,24 @@ calendar.vars = {
     mth: date.getMonth(),
     userMth: date.getMonth(),
     daysHd: date.getDate(),
-    daysOfWeek: date.getDay()
+    daysOfWeek: date.getDay(),
+    tooday: undefined
 };
 calendar.daysColor = function() {
-    calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.backgroundColor = "#e75735";
-    calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.color = "#ffffff";
+    for ( var i = 0; i < calendar.elem.bodyDays.length; i++) {
+        if (calendar.elem.bodyDays[i].textContent == calendar.vars.daysHd) {
+            if (calendar.elem.bodyDays[i].style.color == 'rgb(134, 134, 134)' || calendar.elem.bodyDays[i].style.color == '') {
+                calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.backgroundColor = "#e75735";
+                calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.color = "#ffffff";
+                calendar.vars.tooday = i;
+            }
+        }
+    }
+
 };
-calendar.daysColor();
+window.onload = function() {
+    calendar.daysColor();
+};
 calendar.today = function() {
     this.elem.spanMth[0].innerText =  this.month[this.vars.mth];
     this.elem.spanDays[0].innerText = this.vars.daysHd;
@@ -111,11 +122,11 @@ calendar.elem.rightBtn[0].onclick = function() {
     calendar.elem.spanMth[0].innerText =  calendar.month[calendar.vars.userMth];
     calendar.getDaysOfMth(calendar.vars.userMth);
     if ( calendar.vars.userMth == calendar.vars.mth ) {
-        calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.backgroundColor = "#e75735";
-        calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.color = "#ffffff";
+        calendar.elem.bodyDays[calendar.vars.tooday].style.backgroundColor = "#e75735";
+        calendar.elem.bodyDays[calendar.vars.tooday].style.color = "#ffffff";
     } else {
-        calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.backgroundColor = "#f2f2f2";
-        calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.color = "#868686";
+        calendar.elem.bodyDays[calendar.vars.tooday].style.backgroundColor = "#f2f2f2";
+        calendar.elem.bodyDays[calendar.vars.tooday].style.color = "#868686";
     }
 };
 calendar.elem.leftBtn[0].onclick = function() {
@@ -126,11 +137,11 @@ calendar.elem.leftBtn[0].onclick = function() {
     calendar.elem.spanMth[0].innerText =  calendar.month[calendar.vars.userMth];
     calendar.getDaysOfMth(calendar.vars.userMth);
     if ( calendar.vars.userMth == calendar.vars.mth ) {
-        calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.backgroundColor = "#e75735";
-        calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.color = "#ffffff";
+        calendar.elem.bodyDays[calendar.vars.tooday].style.backgroundColor = "#e75735";
+        calendar.elem.bodyDays[calendar.vars.tooday].style.color = "#ffffff";
     } else {
-        calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.backgroundColor = "#f2f2f2";
-        calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.color = "#868686";
+        calendar.elem.bodyDays[calendar.vars.tooday].style.backgroundColor = "#f2f2f2";
+        calendar.elem.bodyDays[calendar.vars.tooday].style.color = "#868686";
     }
 };
 calendar.correct = function() {
