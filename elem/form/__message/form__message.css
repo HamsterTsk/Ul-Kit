@@ -1,0 +1,14 @@
+.form__message {
+    border-radius: 3px;
+    border: none;
+    resize: none;
+    background-color: rgb(229, 229, 229);
+    width: 300px;
+    height: 80px;
+    font-size: 14px;
+    font-family: "SourceSansPro";
+    color: rgb(136, 136, 136);
+    padding: 10px 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="__message/form__message.css">
+    <link rel="stylesheet" href="__input/form__input.css">
+    <link rel="stylesheet" href="__check/form__check.css">
+    <link rel="stylesheet" href="__button/form__button.css">
+</head>
+<body>
+<form class="form" action="#">
+    <input type="text" placeholder="Your Name" class="form__input form__input_name">
+    <div class="form__check form__check_false">
+        <span class="form__check_decore form__check_false"></span>
+        <span class="form__check_text">ERROR</span>
+    </div>
+    <br>
+    <input type="text" placeholder="Your Email" class="form__input form__input_email">
+    <div class="form__check form__check_true">
+        <span class="form__check_decore form__check_true"></span>
+        <span class="form__check_text">THANKS!</span>
+    </div>
+    <br>
+    <textarea cols="30" rows="10" placeholder="Your Message" class="form__message"></textarea>
+    <div class="form__button">
+        <span class="form__button_text">SUBMIT</span>
+    </div>
+</form>
+
+<script src="form.js"></script>
+</body>
+</html>
