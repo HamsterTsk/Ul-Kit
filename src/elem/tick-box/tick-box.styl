@@ -1,0 +1,41 @@
+.tick-box
+  position relative
+  width 23px
+  height 23px
+  border-radius 50%
+  cursor pointer
+  margin-top 100px
+
+.tick-box_active
+  background-color #4db7a7
+
+.tick-box_disactive
+  background-color #e5e5e5
+
+.tick-box__mark:before
+  position absolute
+  top 13px
+  left 5px
+  content ''
+  display block
+  width 6px
+  height 2px
+  transform rotate(45deg)
+
+.tick-box__mark:after
+  position absolute
+  top 11px
+  left 7px
+  content ''
+  display block
+  width 12px
+  height 2px
+  transform rotate(-45deg)
+
+.tick-box__mark_active:before
+.tick-box__mark_active:after
+  background-color rgb(255,255,255)
+
+.tick-box__mark_disactive:before
+.tick-box__mark_disactive:after
+  background-color rgb(192,192,192)

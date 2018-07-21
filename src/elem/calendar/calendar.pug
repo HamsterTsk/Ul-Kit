@@ -1,0 +1,18 @@
+mixin calendar()
+    .calendar
+        .calendar__head
+            span.calendar__head_day
+            .calendar__month
+                span.calendar__month_left-arrow
+                span.calendar__month_text
+                span.calendar__month_right-arrow
+            -var daysOfTheWeek = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
+            each item in daysOfTheWeek
+                span.calendar__head_days-of-the-week= item
+        .calendar__body
+            .calendar__body_days
+                -for (var x = 0; x < 35; x++)
+                    span.calendar__days
+        .calendar__footer
+            span(class='calendar__button calendar__button_open') Closed
+            span(class='calendar__button calendar__button_tooday') Tooday

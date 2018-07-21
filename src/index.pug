@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+  body
+    include elem/circle-button/circle-button
+    include elem/events/events
+    include elem/form/form
+    include elem/green-slider/green-slider
+    include elem/map/map
+    include elem/message/message
+    include elem/news/news
+    include elem/percentages/percentages
+    include elem/profile/profile
+    include elem/red-slider/red-slider
+    include elem/square-button/square-button
+    include elem/stages/stages
+    include elem/tick-box/tick-box
+    include elem/toggle/toggle
+    include elem/video/video
+    include elem/calendar/calendar
+    +circle-button('disactive', 'disactive', 'left')
+    +events('20', 'JULY', 'Title', 'lorem10')
+    +form()
+    +green-slider()
+    +map('https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17616.229721066826!2d84.99486729878974!3d56.50171487747606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1523880910880')
+    +message()
+    +news('It’s all going downhill', '24 AUGUST 2013', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita iusto labore mollitia nihil quis.')
+    +percentages()
+    +profile('male', 'John Smith', 'UX DESIGNER')
+    +red-slider()
+    +square-button()
+    +stages()
+    +tick-box('active')
+    +toggle('active')
+    +video()
+    +calendar()

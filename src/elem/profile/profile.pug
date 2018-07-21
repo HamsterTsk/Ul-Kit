@@ -1,0 +1,21 @@
+mixin profile(gender, spanName, position)
+    div(class='profile' id='profile')
+        div(class='profile__image profile__image_' + gender id='profile__image')
+            if gender === 'male'
+                img(src=require('./elem/profile/img/pr-img-1.png'))
+            else
+                img(src=require('./elem/profile/img/pr-img-2.png'))
+        div(class='profile__base profile__base_' + gender id='profile__base')
+            div(class='profile__base_decore profile__base_' + gender)
+            span(class='profile__name profile__name_' + gender)= spanName
+            span(class='profile__position profile__position_' + gender)= position
+            .profile__links
+                .profile__links_fb
+                    a(href='#')
+                        img(src=require('./elem/profile/img/FB.png'))
+                .profile__links_tw
+                    a(href='#')
+                        img(src=require('./elem/profile/img/Twitter.png'))
+                .profile__links_drib
+                    a(href='#')
+                        img(src=require('./elem/profile/img/Dribbble.png'))

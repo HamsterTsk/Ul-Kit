@@ -1,0 +1,14 @@
+mixin message()
+    .message
+        .message__name
+            span.message__name_who Sarah Brown
+        .message__photo
+            img.message__photo_image(src=require('./elem/message/img/pr-img-2.png'))
+        .message__body
+            span(class='message__icon message__icon_chat')
+                img(src=require('./elem/message/img/Chat-Icon.png'))
+            span(class='message__icon message__icon_camera')
+                img(src=require('./elem/message/img/Camera-Icon.png'))
+            span(class='message__content message__content_1') Hey! So are we cool to meet at the art gallery? Say 8pm
+            span(class='message__content message__content_2') Yeah that sounds great. See you then.
+            div(class='message__button' id='msg-btn') REPLY

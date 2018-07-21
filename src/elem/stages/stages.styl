@@ -1,0 +1,57 @@
+.stages
+  display block
+  position relative
+  top 50px
+  left 10px
+
+.stages__bar_disactive
+  display block
+  position absolute
+  width 590px
+  height 5px
+  border-radius 2px
+  background-color #e5e5e5
+
+.stages__bar_active
+  display block
+  position absolute
+  width 0
+  height 5px
+  border-radius 2px
+  background-color #e75735
+  transition all ease 500ms
+
+.stages__circle
+  position absolute
+  top -12px
+  display block
+  width 29px
+  height 29px
+  border-radius 14px
+  font-size 14px
+  letter-spacing 1px
+  line-height 30px
+  color rgb(255,255,255)
+  font-family "sans-serif"
+  text-align center
+  cursor pointer
+  transition all ease 1000ms
+
+.stages__circle_active
+  background-color #e75735
+
+.stages__circle_disactive
+  background-color #e5e5e5
+  color rgb(136,136,136)
+
+#stages__circle_2
+  left 148px
+
+#stages__circle_3
+  left 296px
+
+#stages__circle_4
+  left 444px
+
+#stages__circle_5
+  left 590px

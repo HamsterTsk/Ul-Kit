@@ -1,0 +1,15 @@
+mixin form()
+    form.form
+        input(type='text' placeholder='Your Name' class='form__input form__input_name')
+        .form__check
+            span(class='form__check_decore')
+            span(class='form__check_text')
+        br
+        input(type='text' placeholder='Your Email' class='form__input form__input_email')
+        .form__check
+            span(class='form__check_decore')
+            span(class='form__check_text')
+        br
+        textarea(cols='30' rows='10' placeholder='Your Message' class='form__message')
+        .form__button
+            span.form__button_text SUBMIT

@@ -1,0 +1,61 @@
+.circle-button
+  cursor pointer
+  width 50px
+  height 50px
+  border-radius: 50%
+  position relative
+  margin-top 50px
+
+.circle-button_disactive
+  background-color #4db7a7
+  border 3px solid #4db7a7
+
+.circle-button_active
+  border 3px solid #4db7a7
+  background-color rgb(255,255,255)
+
+.circle-button_extreme
+  background-color #e5e5e5
+  border 3px solid #e5e5e5
+
+.circle-button__arrow
+  position absolute
+  top 50%
+  left 35%
+
+.circle-button__arrow_left
+  left 32%
+
+.circle-button__arrow:before
+  content ""
+  display block
+  width 16px
+  height 3px
+  margin-top 3px
+
+.circle-button__arrow:after
+  content ""
+  display block
+  width 16px
+  height 3px
+  margin-top -12px
+
+.circle-button__arrow_disactive:before
+.circle-button__arrow_disactive:after
+  background-color rgb(255,255,255)
+
+.circle-button__arrow_active:before
+.circle-button__arrow_active:after
+  background-color #4db7a7
+
+.circle-button__arrow_right:before
+  transform rotate(-45deg)
+
+.circle-button__arrow_right:after
+  transform rotate(45deg)
+
+.circle-button__arrow_left:before
+  transform rotate(45deg)
+
+.circle-button__arrow_left:after
+  transform rotate(-45deg)
