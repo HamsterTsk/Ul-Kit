@@ -1,8 +1,0 @@
-.calendar__body {
-    height: 201px;
-    overflow: hidden;
-    transition: all ease 500ms;
-}
-.calendar__body_days {
-    margin-left: 3px;
-}
