@@ -1,3 +1,10 @@
 mixin map(src)
     .map
         iframe(src=src width="600" height="212" frameborder="0" style="border:0" allowfullscreen)
+        .map__bar
+            span.map__bar_text Meet us!
+            span.map__bar_location xxx Lenina street Tomsk
+            .map__icon_location
+                img(src=require('./elem/map/img/icon-location.png'))
+            .map__icon_pin
+                img(src=require('./elem/map/img/icon-pin.png'))
