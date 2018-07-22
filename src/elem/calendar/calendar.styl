@@ -1,5 +1,5 @@
 .calendar
-  position absolute
+  position relative
   height 428px
   width 280px
   border-radius 5px
@@ -7,145 +7,108 @@
   -moz-user-select none
   -ms-user-select none
   user-select none
-  margin-top 50px
-
-.calendar__body
-  height 201px
-  overflow hidden
-  transition all ease 500ms
-
-
-
-.calendar__button
-  color #868686
-  font-size 13px
-  width 100px
-  height 49px
-  font-family sans-serif
-  font-weight bold
-  display inline-block
-  position relative
-  text-align center
-  line-height 52px
-  cursor pointer
-
-.calendar__button_open
-  left 10px
-
-.calendar__button_tooday
-  left 60px
-
-.calendar__days
-  font-size 20px
-  color #868686
-  background-color #f2f2f2
-  font-family sans-serif
-  width 39px
-  height 39px
-  text-align center
-  display inline-block
-  line-height 39px
-  margin-left 1px
-  margin-top 1px
-
-.calendar__footer
-  height 49px
-  background-color #e5e5e5
-  border-radius 0 0 5px 5px
-
-.calendar__head
-  height 180px
-  background-color #e75735
-  border-radius 5px 5px 0 0
-  color #ffffff
-
-.calendar__head_day
-  display block
-  width 100%
-  font-size 80px
-  height 110px
-  font-family sans-serif
-  text-align center
-  line-height 110px
-
-.calendar__head_days-of-the-week
-  font-size 9px
-  display inline-block
-  font-family sans-serif
-  width 39px
-  text-align center
-  height 26px
-  line-height 26px
-  margin 0 1px 0 0
-
-.calendar__month
-  height 44px
-  background-color #d54c2c
-
-.calendar__month_left-arrow
-.calendar__month_right-arrow
-  display inline-block
-  width 20px
-  height 20px
-  margin 12px 14px 12px 14px
-  position relative
-  cursor pointer
-
-.calendar__month_left-arrow:after
-  content ''
-  display inline-block
-  width 14px
-  height 4px
-  border-radius 5px
-  background-color #ffffff
-  transform rotate(45deg)
-  position absolute
-  top 11px
-  left 2px
-
-.calendar__month_left-arrow:before
-  content ''
-  display block
-  width 14px
-  height 4px
-  border-radius 5px
-  background-color #ffffff
-  transform rotate(-45deg)
-  position absolute
-  top 4px
-  left 2px
-
-.calendar__month_right-arrow:after
-  content ''
-  display block
-  width 14px
-  height 4px
-  border-radius 5px
-  background-color #ffffff
-  transform rotate(-45deg)
-  position absolute
-  top 11px
-  left 2px
-
-.calendar__month_right-arrow:before
-  content ''
-  display block
-  width 14px
-  height 4px
-  border-radius 5px
-  background-color #ffffff
-  transform rotate(45deg)
-  position absolute
-  top 4px
-  left 2px
-
-.calendar__month_text
-  display inline-block
-  position relative
-  top -14px
-  width 176px
-  height 100%
-  text-align center
-  font-size 24px
-  line-height 44px
-  font-family sans-serif
+  &__body
+    height 201px
+    overflow hidden
+    transition all ease 500ms
+  &__button
+    color #868686
+    font-size 13px
+    width 100px
+    height 49px
+    font-family sans-serif
+    font-weight bold
+    display inline-block
+    position relative
+    text-align center
+    line-height 52px
+    cursor pointer
+    &_open
+      left 10px
+    &_tooday
+      left 60px
+  &__days
+    font-size 20px
+    color #868686
+    background-color #f2f2f2
+    font-family sans-serif
+    width 39px
+    height 39px
+    text-align center
+    display inline-block
+    line-height 39px
+    margin-left 1px
+    margin-top 1px
+  &__footer
+    height 49px
+    background-color #e5e5e5
+    border-radius 0 0 5px 5px
+  &__head
+    height 180px
+    background-color #e75735
+    border-radius 5px 5px 0 0
+    color #ffffff
+    &_day
+      display block
+      width 100%
+      font-size 80px
+      height 110px
+      font-family sans-serif
+      text-align center
+      line-height 110px
+    &_days-of-the-week
+      font-size 9px
+      display inline-block
+      font-family sans-serif
+      width 39px
+      text-align center
+      height 26px
+      line-height 26px
+      margin 0 1px 0 0
+  &__month
+    height 44px
+    background-color #d54c2c
+    &_left-arrow,
+    &_right-arrow
+      display inline-block
+      width 20px
+      height 20px
+      margin 12px 14px 12px 14px
+      position relative
+      cursor pointer
+    &_left-arrow:after,
+    &_left-arrow:before,
+    &_right-arrow:after,
+    &_right-arrow:before
+      content ''
+      display inline-block
+      width 14px
+      height 4px
+      border-radius 5px
+      background-color #ffffff
+      transform rotate(45deg)
+      position absolute
+      top 11px
+      left 2px
+    &_left-arrow:before
+      transform rotate(-45deg)
+      top 4px
+      left 2px
+    &_right-arrow:after
+      transform rotate(-45deg)
+      top 11px
+      left 2px
+    &_right-arrow:before
+      transform rotate(45deg)
+      top 4px
+      left 2px
+    &_text
+      display inline-block
+      position relative
+      top -14px
+      width 176px
+      height 100%
+      text-align center
+      font-size 24px
+      line-height 44px
+      font-family sans-serif
