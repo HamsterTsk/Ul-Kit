@@ -5,87 +5,77 @@
   background-color #4db7a7
   border-radius 6px
   margin-top 50px
-.events__image
-  display block
-  position: absolute
-  width 95px
-  background-color #ffffff
-  height 212px
-  overflow hidden
-  border-radius 6px 0 0 6px
-
-.events__image img
-  display block
-  position absolute
-  left -60px
-
-.events__button
-  position absolute
-  width 128px
-  height 22px
-  border-radius 3px
-  background-color #ffffff
-  top 155px
-  left 80px
-  margin-top 20px
-  box-shadow 0 3px 0 0 #369284
-  cursor pointer
-
-.events__button_text
-  -webkit-user-select none
-  -moz-user-select none
-  -ms-user-select none
-  user-select none
-  font-size 10px
-  letter-spacing 1px
-  line-height 24px
-  color rgb(67,172,157)
-  width 100%
-  display block
-  text-align center
-  font-family "sans-serif"
-  font-weight 600
-
-.events__content
-  display block
-  position absolute
-  left 95px
-  width 288px
-  height 212px
-  color rgb(255,255,255)
-
-.events__content_date
-  display block
-  float left
-  margin-top 40px
-  margin-left 40px
-  font-size 73px
-  letter-spacing -3px
-  line-height 26px
-  font-family "sans-serif"
-
-.events__content_month
-  display block
-  margin-top 55px
-  margin-left 120px
-  font-size 30px
-  line-height 26px
-  font-family "sans-serif"
-
-.events__content_title
-  display block
-  margin-top 10px
-  margin-left 40px
-  font-size 13px
-  font-weight 600
-  letter-spacing 1px
-  font-family "sans-serif"
-
-.events__content_text
-  display block
-  width 160px
-  margin-top 10px
-  margin-left 40px
-  font-size 11px
-  letter-spacing 1px
-  font-family "sans-serif"
+  &__image
+    display block
+    position: absolute
+    width 95px
+    background-color #ffffff
+    height 212px
+    overflow hidden
+    border-radius 6px 0 0 6px
+  &__image img
+    display block
+    position absolute
+    left -60px
+  &__button
+    position absolute
+    width 128px
+    height 22px
+    border-radius 3px
+    background-color #ffffff
+    top 155px
+    left 80px
+    margin-top 20px
+    box-shadow 0 3px 0 0 #369284
+    cursor pointer
+    &_text
+      -webkit-user-select none
+      -moz-user-select none
+      -ms-user-select none
+      user-select none
+      font-size 10px
+      letter-spacing 1px
+      line-height 24px
+      color rgb(67,172,157)
+      width 100%
+      display block
+      text-align center
+      font-family "sans-serif"
+      font-weight 600
+  &__content
+    display block
+    position absolute
+    left 95px
+    width 288px
+    height 212px
+    color rgb(255,255,255)
+    &_date,
+    &_month,
+    &_title,
+    &_text
+      display block
+      font-family "sans-serif"
+    &_date
+      float left
+      margin-top 40px
+      margin-left 40px
+      font-size 73px
+      letter-spacing -3px
+      line-height 26px
+    &_month
+      margin-top 55px
+      margin-left 120px
+      font-size 30px
+      line-height 26px
+    &_title
+      margin-top 10px
+      margin-left 40px
+      font-size 13px
+      font-weight 600
+      letter-spacing 1px
+    &_text
+      width 160px
+      margin-top 10px
+      margin-left 40px
+      font-size 11px
+      letter-spacing 1px
