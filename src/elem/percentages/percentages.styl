@@ -2,40 +2,34 @@
   width 130px
   height 130px
   position relative
-  margin-top 50px
   cursor pointer
-
-.percentages__quatity
-  position relative
-  left -10px
-  width 100px
-  height 100px
-  border-radius 100%
-  margin 0 auto
-  color #9d9d9d
-
-.percentages__quatity:after
-  content attr(data-pct)
-  display block
-  position absolute
-  top 30px
-  width 100px
-  height 40px
-  font-size 42px
-  text-align center
-
-.percentages__svg
-  transform rotate(-90deg)
-  position absolute
-  top -20px
-
-.percentages__scale
-  cx 55px
-  cy 55px
-  stroke-dashoffset 0
-  transition stroke-dashofset 1s linear
-  stroke white
-  stroke-width 5px
-
-.percentages__scale_active
-  stroke #e75735
+  &__quatity
+    position relative
+    left -10px
+    width 100px
+    height 100px
+    border-radius 100%
+    margin 0 auto
+    color #9d9d9d
+    &:after
+      content attr(data-pct)
+      display block
+      position absolute
+      top 30px
+      width 100px
+      height 40px
+      font-size 42px
+      text-align center
+  &__svg
+    transform rotate(-90deg)
+    position absolute
+    top -20px
+  &__scale
+    cx 55px
+    cy 55px
+    stroke-dashoffset 0
+    transition stroke-dashofset 1s linear
+    stroke white
+    stroke-width 5px
+    &_active
+      stroke #e75735
