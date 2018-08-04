@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    title= htmlWebpackPlugin.options.title
+  body
+    include ../elem/header/header
+    include ../elem/left-bar/left-bar
+    include ../elem/video/video
+
+    +header('1')
+    .index-page
+      +left-bar()
+      .index-page__wrapper
+        .index-page__content
+          .index-page__content_text
+            span
+              | Приветсвуем Вас на сайте-портале Nevent!
+          .index-page__content_video
+            +video()

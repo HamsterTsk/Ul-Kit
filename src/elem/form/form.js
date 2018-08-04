@@ -1,4 +1,4 @@
-const css = require('./form.styl');
+import './form.styl';
 const formInput = document.getElementsByClassName('form__input'),
     formCheck = document.getElementsByClassName('form__check'),
     formCheckDecore = document.getElementsByClassName('form__check_decore'),

@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        title= htmlWebpackPlugin.options.title
+    body
+        include ../elem/header/header
+        include ../elem/map/map
+        include ../elem/form/form
+        +header('5')
+        .contacts-page
+            .contacts-page__content
+                .contacts-page__info
+                    table
+                        tr
+                            td Контактный телефон
+                            td 8-888-888-88-88
+                        tr
+                            td Адрес
+                            td г.Томск, ул.Ленина ххх
+                    .contacts-page__info_map-wrapp
+                        +map('https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17616.229721066826!2d84.99486729878974!3d56.50171487747606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1523880910880')
+                .contacts-page__feedback
+                    span.contacts-page__feedback_text Вы можете оставить свой отзыв, после чего,с Вами обязательно свяжется наш специалист!
+                    +form()

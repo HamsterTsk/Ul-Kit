@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        title= htmlWebpackPlugin.options.title
+    body
+        include ../elem/header/header
+        include ../elem/left-bar/left-bar
+        include ../elem/preview-blog/preview-blog
+        include ../elem/circle-button/circle-button
+        +header('2')
+        .news-page
+            +left-bar()
+            .news-page__wrapper
+                .news-page__content
+                    +preview-blog('Иванов Иван', '23.07.18', 'man', 'Иван', 'Писатель', 'Не так давно произошло самое захватыващие событие последнего десятилетия. Очевидцы происшествия утверждают, что видели самую большую в мире...', 'red')
+                    +preview-blog('Мария Сидорова', '21.07.18', 'female', 'Мария', 'Журналист', 'В самом разгаре летнего сезона, в одном из курортных городов России, произошел казус. Власти утверждают, что ничего подобного не происходило, но один из жителей дал нам интерью.', 'red')
+                    +preview-blog('Кузнецов Михаил', '18.07.18', 'man', 'Миша', 'Кинокритик', 'Недавно вышадшая кинокартина зарубежных режисеров потрясла весь мир. Заслуживает ли она такую высокую оценку или же зрители просто давно не видели хорошее кино?', 'red')
+                    .news-page__button
+                        .news-page__button_left
+                            +circle-button('extreme','disactive','left')
+                        .news-page__button_right
+                            +circle-button('disactive','disactive','right')
+                    .news-page__content_bugs
+                        +square-button()
+                        +square-button()

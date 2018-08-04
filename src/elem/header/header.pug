@@ -1,0 +1,10 @@
+include ../menu/menu
+mixin header(activePage)
+    header.header
+        .header__img
+            img(src=require('../elem/header/img/logo.png'))
+        .header__caption
+            span.header__caption_name Nevent
+            span.header__caption_addition - Новостной портал
+        .header__menu
+            +menu(menuElement, activePage)

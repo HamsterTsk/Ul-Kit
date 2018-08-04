@@ -1,4 +1,4 @@
-const css = require('./calendar.styl');
+import './calendar.styl';
 var date = new Date();
 Date.prototype.daysInMonth = function(month) {
     if ( month == 0) return 31;
@@ -97,10 +97,10 @@ calendar.vars = {
 };
 calendar.daysColor = function() {
     for ( var i = 0; i < calendar.elem.bodyDays.length; i++) {
-        if (calendar.elem.bodyDays[i].textContent == calendar.vars.daysHd) {
+        if (calendar.elem.bodyDays[i].textContent == calendar.vars.daysHd & calendar.elem.bodyDays[i].style.color !== 'rgb(255,255,255)') {
             if (calendar.elem.bodyDays[i].style.color == 'rgb(134, 134, 134)' || calendar.elem.bodyDays[i].style.color == '') {
-                calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.backgroundColor = "#e75735";
-                calendar.elem.bodyDays[calendar.vars.daysHd + 5].style.color = "#ffffff";
+                calendar.elem.bodyDays[i].style.backgroundColor = "#e75735";
+                calendar.elem.bodyDays[i].style.color = "#ffffff";
                 calendar.vars.tooday = i;
             }
         }

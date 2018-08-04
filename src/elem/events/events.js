@@ -1,4 +1,4 @@
-const css = require('./events.styl');
+import './events.styl';
 
 const eventsButton = document.getElementById('events__button');
 

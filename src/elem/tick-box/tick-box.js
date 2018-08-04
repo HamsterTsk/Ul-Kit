@@ -1,4 +1,4 @@
-const css = require('./tick-box.styl');
+import './tick-box.styl';
 var tickBox = document.getElementById('tick-box'),
     tickBoxMark = document.getElementById('tick-box__mark');
 tickBox.onclick = function() {

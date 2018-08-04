@@ -1,1 +1,1 @@
-const css = require('./video.styl');
+import './video.styl';

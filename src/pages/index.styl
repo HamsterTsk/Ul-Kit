@@ -1,0 +1,36 @@
+body
+  background-color #E9FFFC
+.index-page
+  display flex
+  justify-content space-around
+  margin-top 50px
+  &__wrapper
+    max-width 900px
+    height 440px
+    margin 0 25px
+  &__content
+    border-radius 5px
+    border 2px solid #4db7a7
+    width 100%
+    transition all ease 300ms
+    &_text
+      font-size 30px
+      color #4db7a7
+      margin 0 135px
+      text-align center
+      & span
+        display inline-block
+        margin 50px 0
+    &_video
+      width 100%
+      display flex
+      justify-content center
+@media screen and (max-width: 1130px) and (min-width: 970px)
+  .menu
+    margin-top 50px
+@media screen and (max-width: 970px) and (min-width: 400px)
+  .index-page
+    flex-direction column-reverse
+    align-items center
+  .index-page__content
+    margin-top -80px

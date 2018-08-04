@@ -7,7 +7,14 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/app.js',
+        indexPage: './src/pages/index.js',
+        checkinPage: './src/pages/checkin-page.js',
+        contactsPage: './src/pages/contacts-page.js',
+        eventsPage: './src/pages/events-page.js',
+        newsPage: './src/pages/news-page.js',
+        header: './src/elem/header/header.js',
+        previewBlog: './src/elem/preview-blog/preview-blog.js',
+        formCheckin: './src/elem/form-checkin/form-checkin.js',
         circleButton: './src/elem/circle-button/circle-button.js',
         events: './src/elem/events/events.js',
         form: './src/elem/form/form.js',
@@ -23,7 +30,9 @@ module.exports = {
         tickBox: './src/elem/tick-box/tick-box.js',
         toggle: './src/elem/toggle/toggle.js',
         video: './src/elem/video/video.js',
-        calendar: './src/elem/calendar/calendar.js'
+        calendar: './src/elem/calendar/calendar.js',
+        menu: './src/elem/menu/menu.js',
+        leftBar: './src/elem/left-bar/left-bar.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -87,13 +96,54 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Project Dev',
+            title: 'Home',
             minify: {
                 collapseWhitespace: true
             },
+            chunks: ['indexPage'],
             hash: true,
-            template: './src/index.pug',
+            template: './src/pages/index.pug',
             filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            title: 'News',
+            minify: {
+                collapseWhitespace: true
+            },
+            chunks: ['newsPage'],
+            hash: true,
+            template: './src/pages/news-page.pug',
+            filename: 'news-page.html'
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Events',
+            minify: {
+                collapseWhitespace: true
+            },
+            chunks: ['eventsPage', 'header', 'menu'],
+            hash: true,
+            template: './src/pages/events-page.pug',
+            filename: 'events-page.html'
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Check in',
+            minify: {
+                collapseWhitespace: true
+            },
+            chunks: ['checkinPage', 'header', 'menu'],
+            hash: true,
+            template: './src/pages/checkin-page.pug',
+            filename: 'checkin-page.html'
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Contacts',
+            minify: {
+                collapseWhitespace: true
+            },
+            chunks: ['contactsPage', 'header', 'menu'],
+            hash: true,
+            template: './src/pages/contacts-page.pug',
+            filename: 'contacts-page.html'
         }),
         new ExtractTextPlugin('[name].css', {allChunks: true}),
     ],

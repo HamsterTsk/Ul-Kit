@@ -1,4 +1,4 @@
-const css = require('./red-slider.styl');
+import './red-slider.styl';
 var redSliderCircle = document.getElementById('red-slider__circle'),
       redSlider = document.getElementById('red-slider'),
       redSliderDialog = document.getElementById('red-slider__dialog');

@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        title= htmlWebpackPlugin.options.title
+    body
+        include ../elem/header/header
+        include ../elem/left-bar/left-bar
+        include ../elem/preview-blog/preview-blog
+        include ../elem/circle-button/circle-button
+        +header('3')
+        .events-page
+            +left-bar()
+            .events-page__wrapper
+                .events-page__content
+                    +preview-blog('Смирнов Андрей', '28.07.18', 'man', 'Андрей', 'Фотограф', 'В последних числах июля 2018 года, в центре столицы прошла огромная ярмарка расписных фигорок. Участники ярмарки съехались со всей России.', 'red')
+                    +preview-blog('Петров Георгий', '25.07.18', 'man', 'Гриша', 'Велосепедист', 'Лето 2018 года запомнится велоспорстменам незабываемым, самым большим за последние 10 лет веломарафоном! В марафоне учавствовало порядка 20000 человек.', 'red')
+                    +preview-blog('Куликова Елизавета', '21.07.18', 'female', 'Лиза', 'Музыкант', 'Давно не слушали хорошего джаза? Тогда это мероприятие определнно для вас! Лучшие группы России и ближнего зарубежья выступят на большой Московской площадке...', 'red')
+                    .events-page__button
+                        .events-page__button_left
+                            +circle-button('extreme','disactive','left')
+                        .events-page__button_right
+                            +circle-button('disactive','disactive','right')
+                    .events-page__content_bugs
+                        +square-button()
+                        +square-button()

@@ -1,0 +1,16 @@
+include ../profile/profile
+include ../square-button/square-button
+mixin preview-blog(author, date, gender, nameAuthor, position, text, color)
+    .preview-blog
+        .preview-blog__author
+            span.preview-blog__author_name
+                | Автор:
+                span=author
+            +profile(gender, nameAuthor, position)
+            span.preview-blog__author_date Дата публикаци:
+                span=date
+        .preview-blog__content
+            span.preview-blog__content_text=text
+            .preview-blog__button
+                +square-button(color)
+

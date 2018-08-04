@@ -1,4 +1,4 @@
-const css = require('./percentages.styl');
+import './percentages.styl';
 
 const percentages = document.getElementById('percentages');
 percentages.onmouseenter = function () {

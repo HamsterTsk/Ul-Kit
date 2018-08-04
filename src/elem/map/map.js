@@ -1,1 +1,1 @@
-const css = require('./map.styl');
+import './map.styl';

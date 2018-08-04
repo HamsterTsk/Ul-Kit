@@ -1,4 +1,4 @@
-const css = require('./search.styl');
+import './search.styl';
 const searchButton = document.getElementsByClassName('search__button'),
       searchInput = document.getElementsByClassName('search__input');
 let checkSearch = 0;

@@ -1,0 +1,57 @@
+include ../green-slider/green-slider
+include ../square-button/square-button
+
+mixin form-checkin()
+    .form-checkin
+        .form-checkin__form_wrapp
+            .form-checkin__form
+                .form-checkin__form_name
+                    form
+                        span.form-checkin__form_span Ваше имя
+                        br
+                        input.form-checkin__form_input(placeholder='Имя')
+                        br
+                        span.form-checkin__form_span Ваша фамилия
+                        br
+                        input.form-checkin__form_input(placeholder='Фамилия')
+                        br
+                        span.form-checkin__form_span Логин
+                        br
+                        input.form-checkin__form_input(placeholder='Логин')
+                        br
+                        span.form-checkin__form_span Пароль
+                        br
+                        input.form-checkin__form_input(placeholder='Пароль' type='password')
+                        .form-checkin__form_button-wrapp
+                            +square-button('red')
+                .form-checkin__form_location
+                    form
+                        span.form-checkin__form_span Из какой вы страны?
+                        br
+                        input.form-checkin__form_input(placeholder='Страна')
+                        br
+                        span.form-checkin__form_span Из какого вы города?
+                        br
+                        input.form-checkin__form_input(placeholder='Город')
+                        .form-checkin__form_button-wrapp
+                            +square-button('red')
+                .form-checkin__form_about
+                    form
+                        span.form-checkin__form_span Расскажите немного о себе
+                        br
+                        textarea(class='form-checkin__textarea' placeholder='О себе')
+                        .form-checkin__form_button-wrapp
+                            +square-button('red')
+                .form-checkin__form_from
+                    form
+                        span.form-checkin__form_span Откуда вы о нас узнали?
+                        br
+                        input.form-checkin__form_input(placeholder='Источник')
+                        br
+                        span.form-checkin__form_span На сколько, по стобальной шкале, вам интересен наш контент?
+                        br
+                        +green-slider()
+                        .form-checkin__form_button-wrapp
+                            +square-button('red')
+                .form-checkin__form_thx
+                    span.form-checkin__form_span-thx Вы успешно зарегестрированы!

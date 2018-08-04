@@ -1,5 +1,5 @@
-mixin square-button()
+mixin square-button(color)
     .square-button_wrapp
-        div(class='square-button' id='square-button')
-            span.square-button__text BUTTON
-            span(class='square-button__circle' id='mouse-circle')
+        div(class='square-button square-button square-button_'+color)
+            span.square-button__text Далее
+            span(class='square-button__circle')

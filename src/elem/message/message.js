@@ -1,4 +1,4 @@
-const css = require('./message.styl');
+import './message.styl';
 const messageButton = document.getElementById('msg-btn');
 
 messageButton.onmousedown = function() {

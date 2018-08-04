@@ -1,4 +1,4 @@
-const css = require('./green-slider.styl');
+import './green-slider.styl';
 
 const greenSliderCircle = document.getElementById('green-slider__circle'),
       greenSlider = document.getElementById('green-slider'),
@@ -12,7 +12,7 @@ greenSliderCircle.onmousedown = function(ev) {
         shiftX = ev.pageX - circleCoords.left,
         sliderCoords = getCoords(greenSlider);
     document.onmousemove = function(ev) {
-        let newLeft = ev.pageX - shiftX - sliderCoords.left;
+        let newLeft = ev.pageX - sliderCoords.left -9;
         if ( newLeft < 0 ) {
             newLeft = 0;
         }
@@ -56,8 +56,9 @@ greenSliderCircle.ondragstart = function() {
     return false;
 };
 greenSlider.onclick = function(ev) {
-    let newLeft = ev.clientX - 15;
-    let rightEdge = greenSlider.offsetWidth - greenSliderCircle.offsetWidth;
+    let sliderCoords = getCoords(greenSlider);
+    let newLeft = ev.pageX - sliderCoords.left - 9;
+    let rightEdge = greenSlider.offsetWidth - greenSliderCircle.offsetWidth/2;
     if (newLeft > rightEdge) {
         newLeft = rightEdge;
     }

@@ -1,1 +1,1 @@
-const css = require('./news.styl');
+import './news.styl';

@@ -1,11 +1,11 @@
 mixin events(date, month, title, text)
     .events
         .events__image
-            img(src=require('./elem/events/img/events-img.png'))
+            img(src=require('../elem/events/img/events-img.png'))
         .events__content
             span.events__content_date= date
             span.events__content_month= month
             span.events__content_title= title
             span.events__content_text= text
             div(class='events__button' id='events__button')
-                span.events__button_text ADD TO CALENDAR
+                span.events__button_text Добавить в календарь

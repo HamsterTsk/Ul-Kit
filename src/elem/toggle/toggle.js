@@ -1,4 +1,4 @@
-const css = require('./toggle.styl');
+import './toggle.styl';
 var toggle = document.getElementById('toggle'),
     checkToggle = 1;
 toggle.onclick = function() {

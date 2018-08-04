@@ -1,0 +1,37 @@
+-var menuElement = ['home', 'news', 'events', 'check in', 'contacts'];
+mixin menu(elem, active)
+    nav.menu
+        ul.menu__ul
+            each link in elem
+                li.menu__list
+                    case link
+                        when 'home'
+                            case active
+                                when '1'
+                                    a(href='./index.html' class='menu__link menu__link_index menu__link_active')=link
+                                default
+                                    a(href='./index.html' class='menu__link menu__link_index')=link
+                        when 'news'
+                            case active
+                                when '2'
+                                    a(href='./news-page.html' class='menu__link menu__link_news menu__link_active')=link
+                                default
+                                    a(href='./news-page.html' class='menu__link menu__link_news')=link
+                        when 'events'
+                            case active
+                                when '3'
+                                    a(href='./events-page.html' class='menu__link menu__link_events menu__link_active')=link
+                                default
+                                    a(href='./events-page.html' class='menu__link menu__link_events')=link
+                        when 'check in'
+                            case active
+                                when '4'
+                                    a(href='./checkin-page.html' class='menu__link menu__link_checkin menu__link_active')=link
+                                default
+                                    a(href='./checkin-page.html' class='menu__link menu__link_checkin')=link
+                        when 'contacts'
+                            case active
+                                when '5'
+                                    a(href='./contacts-page.html' class='menu__link menu__link_cintacts menu__link_active')=link
+                                default
+                                    a(href='./contacts-page.html' class='menu__link menu__link_contacts')=link

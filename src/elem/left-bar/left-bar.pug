@@ -1,0 +1,12 @@
+include ../events/events
+include ../news/news
+include ../calendar/calendar
+mixin left-bar()
+    .left-bar
+        span.left-bar__text Последние новости и события
+        .left-bar__news-wrap
+            +news('Увлекательное путешествие', '24 Августа', '24 августа состоится увлекательное путешествие одного из молодых любителей велоспорта...')
+        .left-bar__events-wrap
+            +events('15', 'сентября', 'Большой город', 'Выставка картин под названием "Большой город". Вас ждут картины со всего мира')
+        .left-bar__calendar-wrap
+            +calendar()
